@@ -15,3 +15,15 @@ app.get("/tool.html", function (request, response) {
 app.get("/frame1.html", function (request, response) {
 	response.sendFile(__dirname + '/views/frame1.html');
 });
+
+app.get("/yarchive.html", function (request, response) {
+	response.sendFile(__dirname + '/views/yarchive.html');
+});
+
+app.get("/yorb2.html", function (request, response) {
+	response.sendFile(__dirname + '/views/yorb2.html');
+});
+
+app.get("/about.html", function (request, response) {
+	response.sendFile(__dirname + '/views/about.html');
+});

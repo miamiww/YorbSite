@@ -1,0 +1,37 @@
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <title>Welcome to YORB!</title>
+    <style>
+          button {
+         background-image: url('assets/stereo.gif');
+         border: 2px solid yellow;
+         color: yellow;
+         font-family: "Tangerine", serif;
+         font-size: 48px;
+         padding: 32px 16px;
+         text-align: center;
+         /* text-decoration: none; */
+         display: inline-block;
+         /* font-size: 16px; */
+         cursor: pointer;
+         text-shadow: 4px 4px 4px #aaa;
+         position: relative;
+         right: 10px;
+         left: 10px;
+         /* width: 340px; */
+  
+      }
+    </style>
+</head>
+<body style="background-image:url('assets/hintergrund_style.jpg')">
+    <h1 style="font-family:'Monaco', Courier, monospace;color:red">Coming Soon!</h1><br>
+    <img src="assets/diamond.gif"><img src="assets/diamond.gif"><img src="assets/diamond.gif">
+    <ul style="font-family:'Courier New', Courier, monospace;color:red;font-size: 20px;"><b>until then enjoy the jukebox</b></ul>
+    <button type="button" onclick="document.querySelector('audio').play()">click ♫ me♫ </button><br>
+
+    <audio loop id="playAudio">
+            <source src="assets/yorb2.mp3" type="audio/mpeg">
+    </audio
+</body>
+</html>
