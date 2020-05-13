@@ -9,7 +9,10 @@ var certificate = fs.readFileSync('/etc/letsencrypt/live/yorb.online/fullchain.p
 var credentials = {key: privateKey, cert: certificate}
 
 var app = express();
+var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
+
 // var server = app.listen(80);
+app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
 
 app.use(express.static('public'));
 

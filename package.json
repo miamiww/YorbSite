@@ -10,6 +10,7 @@
   "author": "alden jones",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "express-http-to-https": "^1.1.4"
   }
 }
