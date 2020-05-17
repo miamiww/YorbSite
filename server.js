@@ -50,6 +50,10 @@ app.get("/yorb20", function (request, response) {
 app.get("/about", function (request, response) {
 	response.sendFile(__dirname + '/views/index-about.html');
 });
+app.get("/tool2.html", function (request, response) {
+	response.sendFile(__dirname + '/views/tool2.html');
+});
+
 
 
 app.get("/springshow.html", function (request, response) {
@@ -58,6 +62,7 @@ app.get("/springshow.html", function (request, response) {
 app.get("/show", function (request, response) {
 	response.sendFile(__dirname + '/views/show.html');
 });
+
 
 
 var httpServer = http.createServer(app);
