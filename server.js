@@ -40,6 +40,7 @@ app.get("/about.html", function (request, response) {
 	response.sendFile(__dirname + '/views/about.html');
 });
 
+
 app.get("/yarchive", function (request, response) {
 	response.sendFile(__dirname + '/views/index-yarchive.html');
 });
@@ -48,6 +49,14 @@ app.get("/yorb20", function (request, response) {
 });
 app.get("/about", function (request, response) {
 	response.sendFile(__dirname + '/views/index-about.html');
+});
+
+
+app.get("/springshow.html", function (request, response) {
+	response.sendFile(__dirname + '/views/springshow.html');
+});
+app.get("/show", function (request, response) {
+	response.sendFile(__dirname + '/views/show.html');
 });
 
 
