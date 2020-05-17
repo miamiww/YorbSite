@@ -40,6 +40,16 @@ app.get("/about.html", function (request, response) {
 	response.sendFile(__dirname + '/views/about.html');
 });
 
+app.get("/yarchive", function (request, response) {
+	response.sendFile(__dirname + '/views/index-yarchive.html');
+});
+app.get("/yorb20", function (request, response) {
+	response.sendFile(__dirname + '/views/index-yorb2.html');
+});
+app.get("/about", function (request, response) {
+	response.sendFile(__dirname + '/views/index-about.html');
+});
+
 
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
