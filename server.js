@@ -42,7 +42,7 @@ app.get("/about.html", function (request, response) {
 app.get("/springshow.html", function (request, response) {
 	response.sendFile(__dirname + '/views/springshow.html');
 });
-app.get("/show.html", function (request, response) {
+app.get("/show", function (request, response) {
 	response.sendFile(__dirname + '/views/show.html');
 });
 
