@@ -39,7 +39,12 @@ app.get("/yorb2.html", function (request, response) {
 app.get("/about.html", function (request, response) {
 	response.sendFile(__dirname + '/views/about.html');
 });
-
+app.get("/springshow.html", function (request, response) {
+	response.sendFile(__dirname + '/views/springshow.html');
+});
+app.get("/show.html", function (request, response) {
+	response.sendFile(__dirname + '/views/show.html');
+});
 
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
