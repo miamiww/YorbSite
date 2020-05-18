@@ -52,14 +52,6 @@ app.get("/about", function (request, response) {
 });
 
 
-app.get("/springshow.html", function (request, response) {
-	response.sendFile(__dirname + '/views/springshow.html');
-});
-app.get("/show", function (request, response) {
-	response.sendFile(__dirname + '/views/show.html');
-});
-
-
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
 
